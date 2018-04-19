@@ -26,7 +26,14 @@ Originally the data was comprised of 61 features which included the original fin
 
 The company list included a small group of outliers with extreme valuation readings. In order to better identify the clusters of companies which were more representative of the population majority, I decided to remove those names who fell more than three standard deviations away from the mean of each feature. In total, 18 companies were removed through this process. In the end, the final group included in the analysis was comprised of 986 companies.
 
-![scatter matrix]('plots/scatter_matrix.png')
+| **Market Caps** |
+| :-------: |
+| Small |362|
+| Mid |289|
+|Large |336|
+|Mega |17|
+
+![scatter matrix](plots/scatter_matrix.png)
 
 ### Company Profiles
 
@@ -44,9 +51,8 @@ The company list included a small group of outliers with extreme valuation readi
 |Technology |197|
 |Utilities |32|
 
-| **Market Caps** |
-| :-------: |
-| Small |362|
-| Mid |289|
-|Large |336|
-|Mega |17|
+## The Results
+
+![t-SNE](plots/TSNE_scaled_k_means.png)
+![t-SNE](plots/TSNE_scaled_market_cap.png)
+![t-SNE](plots/TSNE_scaled_stats.png)
