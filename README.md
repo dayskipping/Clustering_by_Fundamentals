@@ -76,7 +76,7 @@ Following the mapping of the data into 2-dimensions using t-SNE, I utilized a K-
 
 The final cluster analysis appears to show some interesting results. I decided to choose the number of clusters based on the highest silhouette score between 4 to 10 clusters which was **7**. The reason for this selection was to understand if there would be more informative characteristics in each cluster by looking at a larger number of groupings than simply 1 to 3.
 
-![t-SNE](plots/TSNE_scaled_k_means.png)
+![t-SNE](plots/TSNE_scaled_K_means.png)
 
 The following plot overlays the market cap categories onto the t-SNE mapping. It displays a noticeable pattern in the 7th cluster(labeled 6). The 7th cluster is dominated by small cap companies.
 
@@ -100,4 +100,4 @@ The bar plots display the averages for each feature per cluster. The most dramat
 
 ## Next Steps
 
-Implementing an unsupervised learning technique such as clustering can serve as a potentially impactful addition to a predictive model. In order to further this investigation, my goal will be to add these cluster labels to the dataset and attempt to predict the market cap of each company using the ratios from this analysis, their cluster labels, and a variety of other applicable features derived from their financial statements. This type of model may be useful in helping with valuations of private companies which lack the direct feedback from the public market in applying a valuation. In addition, I would like to extract further meaning from these clusters by looking at the return characteristics of the groupings to see if each has a distinct return profile. 
+Implementing an unsupervised learning technique such as clustering can serve as a potentially impactful addition to a predictive model. In order to further this investigation, my goal will be to add these cluster labels to the dataset and attempt to predict the market cap of each company using the ratios from this analysis, their cluster labels, and a variety of other applicable features derived from their financial statements. This type of model may be useful in helping with valuations of private companies which lack the direct feedback from the public market in applying a valuation. In addition, I would like to extract further meaning from these clusters by looking at the return characteristics of the groupings to see if each has a distinct return profile.
