@@ -78,10 +78,26 @@ The final cluster analysis appears to show some interesting results. I decided t
 
 ![t-SNE](plots/TSNE_scaled_k_means.png)
 
-The following plot overlays the market cap categories onto the t-SNE mapping. It displays a noticeable pattern in the 7th cluster(labeled 6). The 7th cluster is dominated by small cap companies.     
+The following plot overlays the market cap categories onto the t-SNE mapping. It displays a noticeable pattern in the 7th cluster(labeled 6). The 7th cluster is dominated by small cap companies.
 
 ![t-SNE](plots/TSNE_scaled_market_cap.png)
 
-The bar plots display the averages for each feature per cluster. The most dramatic difference between clusters is clear in the 7th cluster. This cluster has the poorest average measures in Net Profit Margin, Return on Equity, Return on Assets, and Liabilities to Equity. The cluster that appears to display the best combination of metrics is the 5th cluster.
+In addition to looking at market cap labels, we can also evaluate the embedded data after applying each stock's respective sector classification. There are a few sectors that appear to cluster together such as utilities and real estate.
+
+![t-SNE](plots/TSNE_scaled_sectors.png)
+
+The bar plots display the averages for each feature per cluster. The most dramatic difference between clusters is clear in the 7th cluster. This cluster has the poorest average measures in Net Profit Margin, Return on Equity, Return on Assets, and Liabilities to Equity.
 
 ![t-SNE](plots/TSNE_scaled_stats.png)
+
+** Stocks Most Closely Related to Centroids **
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| TWX | CSU | MRVL | DHR | LFUS | PEP | CPST |
+
+![capstone](plots/capstone.jpeg)
+
+## Next Steps
+
+Implementing an unsupervised learning technique such as clustering can serve as a potentially impactful addition to a predictive model. In order to further this investigation, my goal will be to add these cluster labels to the dataset and attempt to predict the market cap of each company using the ratios from this analysis, their cluster labels, and a variety of other applicable features derived from their financial statements. This type of model may be useful in helping with valuations of private companies which lack the direct feedback from the public market in applying a valuation. In addition, I would like to extract further meaning from these clusters by looking at the return characteristics of the groupings to see if each has a distinct return profile. 
