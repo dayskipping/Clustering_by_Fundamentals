@@ -90,7 +90,7 @@ The bar plots display the averages for each feature per cluster. The most dramat
 
 ![t-SNE](plots/TSNE_scaled_stats.png)
 
-** Stocks Most Closely Related to Centroids **
+**Stocks Most Closely Related to Centroids**
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
